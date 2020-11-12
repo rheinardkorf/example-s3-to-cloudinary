@@ -9,12 +9,6 @@ const parts = url.replace('https://','').split('/')
 parts.shift();
 const public_id = parts.join('/').replace(/\.[^/.]+$/, "");
 
-// cloudinary.config({
-//     cloud_name: 'dyjvoxfwh',
-//     api_key: '734195134127656',
-//     api_secret: 'VxpMLwpeVXg1d1MhEYSh31_rfRE'
-//   });
-
   cloudinary.v2.uploader.upload(signed_url,
   {
     // Optional folder prefix.
